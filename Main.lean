@@ -49,9 +49,3 @@ def main (args : List String) : IO Unit := do
     let (bytes, lines, words) ← (readBytes (IO.FS.Stream.ofHandle handle) 0 0 0)
     match acc with
     | (bytes', lines', words') => pure (bytes + bytes', lines + lines', words + words')
-
-#eval '\n'.isWhitespace
-
-#print IO.FS.Handle
-
-#eval System.FilePath.mk "test.txt"
