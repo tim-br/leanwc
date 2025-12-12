@@ -1,0 +1,10 @@
+name = "leanwc"
+version = "0.1.0"
+defaultTargets = ["leanwc"]
+
+[[lean_lib]]
+name = "Leanwc"
+
+[[lean_exe]]
+name = "leanwc"
+root = "Main"
